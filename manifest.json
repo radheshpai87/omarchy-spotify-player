@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "omarchy-spotify-player",
+  "name": "Spotify Player",
+  "version": "1.0.0",
+  "author": "radheshpai87",
+  "license": "MIT",
+  "description": "Minimal top bar Spotify icon with a rich, interactive player popup featuring seekable timeline, volume controls, shuffle and repeat toggles, and live artwork.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Spotify Player",
+    "description": "Spotify status icon with interactive player popup, seekable timeline, and volume controls",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showTitleInBar": false,
+      "maxBarLabelWidth": 220,
+      "spotifyGreenAccent": true,
+      "enableMarquee": true,
+      "enableAnimatedEqualizer": true,
+      "hideWhenNoMedia": false
+    },
+    "schema": [
+      {
+        "key": "showTitleInBar",
+        "type": "boolean",
+        "label": "Show song title in bar",
+        "defaultValue": false
+      },
+      {
+        "key": "maxBarLabelWidth",
+        "type": "integer",
+        "label": "Maximum bar label width (px)",
+        "min": 100,
+        "max": 500,
+        "step": 20,
+        "defaultValue": 220
+      },
+      {
+        "key": "spotifyGreenAccent",
+        "type": "boolean",
+        "label": "Use vibrant Spotify green brand accent",
+        "defaultValue": true
+      },
+      {
+        "key": "enableMarquee",
+        "type": "boolean",
+        "label": "Scroll long song titles in the bar",
+        "defaultValue": true
+      },
+      {
+        "key": "enableAnimatedEqualizer",
+        "type": "boolean",
+        "label": "Show animated equalizer wave when playing",
+        "defaultValue": true
+      },
+      {
+        "key": "hideWhenNoMedia",
+        "type": "boolean",
+        "label": "Hide bar widget when nothing is playing",
+        "defaultValue": false
+      }
+    ]
+  }
+}
