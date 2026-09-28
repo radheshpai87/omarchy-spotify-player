@@ -4,6 +4,8 @@ A native Spotify status bar widget and interactive player popup for Omarchy and 
 
 This plugin interfaces directly with the official Spotify desktop application via MPRIS and D-Bus, providing a minimal status bar indicator and a feature-rich popup player with live seekable timeline, volume controls, shuffle and repeat toggles, high-resolution album artwork, and automatic application launching.
 
+![Spotify Player Preview](preview.png)
+
 ---
 
 ## One-Command Installation
