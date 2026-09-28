@@ -8,9 +8,9 @@ This plugin interfaces directly with the official Spotify desktop application vi
 
 ---
 
-## One-Command Installation
+## Installation
 
-Any Omarchy user can install and enable this plugin with a single command:
+Install and enable the plugin with a single command:
 
 ```bash
 omarchy plugin add https://github.com/radheshpai87/omarchy-spotify-player.git --enable
@@ -32,22 +32,6 @@ omarchy plugin add https://github.com/radheshpai87/omarchy-spotify-player.git --
 - **Quickshell** (included with Omarchy)
 - **Spotify Desktop Client** (`spotify` on PATH)
 - **Nerd Font** (included with Omarchy for brand and control glyphs)
-
----
-
-## Manual Installation
-
-1. Clone the repository into your Omarchy plugins directory:
-
-```bash
-git clone https://github.com/radheshpai87/omarchy-spotify-player.git ~/.config/omarchy/plugins/omarchy-spotify-player
-```
-
-2. Enable the plugin using the Omarchy CLI:
-
-```bash
-omarchy plugin enable omarchy-spotify-player
-```
 
 ---
 
@@ -119,6 +103,7 @@ omarchy-spotify-player/
 ├── SpotifyProgressSlider.qml  # Seekable progress bar component
 ├── SpotifyVolumeSlider.qml    # Interactive volume slider component
 ├── SpotifyModel.js            # MPRIS discovery, D-Bus commands, and formatting logic
+├── preview.png                # Marketplace showcase preview image
 ├── README.md                  # Plugin documentation
 └── LICENSE                    # MIT License
 ```
